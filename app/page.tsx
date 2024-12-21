@@ -1,101 +1,202 @@
+import React from "react";
+import Banner from "./_components/banner";
 import Image from "next/image";
+import Portfolio from "./_components/portfolio";
+import BrandSlider from "./_components/clients";
+import Artikel from "./_components/Artikel";
+import ContactHome from "./_components/Contact";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      <Banner />
+      <section className="px-[6vw] py-[5vw]">
+        <div className="grid grid-cols-3 items-center">
+          <div>
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/bb.png"
+              width={500}
+              height={200}
+              alt=""
+              className="w-full h-[80vh] rounded-xl object-cover"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+          <div className="col-span-2 px-[10vw]">
+            <h2 className="text-blue font-bold text-[2.4vw] mb-[0.7vw]">
+              Our Expertise
+            </h2>
+            <p className="text-blue font-thin leading-[1.7vw] text-[1vw]">
+              It signifies our commitment to delivering not just buildings but
+              also excellence, innovation, and lasting impact. We view each
+              project as an opportunity to build trust, foster relationships,
+              and contribute to the growth of communities.
+            </p>
+            <div className="grid grid-cols-3 items-stretch justify-between mt-[2vw] gap-y-[1vw] gap-x-[2vw]">
+              <div className="relative px-[1vw] py-[1.4vw] bg-satu opacity-80 rounded-3xl">
+                <div className="absolute inset-0 bg-blue/80 rounded-3xl"></div>{" "}
+                {/* Overlay */}
+                <Image
+                  src="/01.png"
+                  width={60}
+                  height={60}
+                  alt="Mall Decoration Service"
+                  className="object-contain relative z-10"
+                />
+                <p className="text-[0.8vw] text-white mt-[1vw] relative z-10">
+                  Mall Decoration
+                </p>
+              </div>
+
+              <div className="relative px-[1vw] py-[1.4vw] bg-satu opacity-80 rounded-3xl">
+                <div className="absolute inset-0 bg-blue/80 rounded-3xl"></div>{" "}
+                {/* Overlay */}
+                <Image
+                  src="/02.png"
+                  width={60}
+                  height={60}
+                  alt="Mall Decoration Service"
+                  className="object-contain relative z-10"
+                />
+                <p className="text-[0.8vw] text-white mt-[1vw] relative z-10">
+                  Interior Contractor
+                </p>
+              </div>
+
+              <div className="relative px-[1vw] py-[1.4vw] bg-satu opacity-80 rounded-3xl">
+                <div className="absolute inset-0 bg-blue/80 rounded-3xl"></div>{" "}
+                {/* Overlay */}
+                <Image
+                  src="/03.png"
+                  width={60}
+                  height={60}
+                  alt="Mall Decoration Service"
+                  className="object-contain relative z-10"
+                />
+                <p className="text-[0.8vw] text-white mt-[1vw] relative z-10">
+                General Contractor
+                </p>
+              </div>
+
+              <div className="relative px-[1vw] py-[1.4vw] bg-satu opacity-80 rounded-3xl">
+                <div className="absolute inset-0 bg-blue/80 rounded-3xl"></div>{" "}
+                {/* Overlay */}
+                <Image
+                  src="/04.png"
+                  width={60}
+                  height={60}
+                  alt="Mall Decoration Service"
+                  className="object-contain relative z-10"
+                />
+                <p className="text-[0.8vw] text-white mt-[1vw] relative z-10">
+                  Architectural Services
+                </p>
+              </div>
+
+              <div className="relative px-[1vw] py-[1.4vw] bg-satu opacity-80 rounded-3xl">
+                <div className="absolute inset-0 bg-blue/80 rounded-3xl"></div>{" "}
+                {/* Overlay */}
+                <Image
+                  src="/05.png"
+                  width={60}
+                  height={60}
+                  alt="Mall Decoration Service"
+                  className="object-contain relative z-10"
+                />
+                <p className="text-[0.8vw] text-white mt-[1vw] relative z-10">
+                  Event Contractor
+                </p>
+              </div>
+
+              <div className="relative px-[1vw] py-[1.4vw] bg-satu opacity-80 rounded-3xl">
+                <div className="absolute inset-0 bg-blue/80 rounded-3xl"></div>{" "}
+                {/* Overlay */}
+                <Image
+                  src="/06.png"
+                  width={60}
+                  height={60}
+                  alt="Mall Decoration Service"
+                  className="object-contain relative z-10"
+                />
+                <p className="text-[0.8vw] text-white mt-[1vw] relative z-10">
+                  Fiber Modelling
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <Portfolio/>
+
+      <BrandSlider/>
+
+      <section className="px-[6vw] py-[5vw] ">
+        <h2 className="text-blue font-bold text-[2.4vw] mb-[4vw]">
+        Every <span className="text-yellow">step&apos;s</span> in our process
+        </h2>
+        <div className="grid grid-cols-5 items-start justify-between gap-[6vw]">
+          <div>
+            <Image
+            src='/1.png'
+            width={100}
+            height={100}
+            alt=""
+            />
+            <h3 className="text-[2vw] font-medium">Analyze</h3>
+            <p className="text-justify">Tim proyek melakukan analisis untuk mengumpulkan data dan informasi yang diperlukan untuk memahami kebutuhan dan lingkungan kerja terkait</p>
+          </div>
+
+          <div>
+            <Image
+            src='/2.png'
+            width={100}
+            height={100}
+            alt=""
+            />
+            <h3 className="text-[2vw] font-medium">Design</h3>
+            <p className="text-justify">Tim proyek menghasilkan rancangan desain yang terperinci dan memastikan bahwa desain tersebut memenuhi spesifikasi dan persyaratan klien</p>
+          </div>
+
+          <div>
+            <Image
+            src='/33.png'
+            width={100}
+            height={100}
+            alt=""
+            />
+            <h3 className="text-[2vw] font-medium">Develop</h3>
+            <p className="text-justify">Tim proyek mengaplikasikan konsep desain yang telah dibuat dan mengubahnya menjadi produk nyata</p>
+          </div>
+
+          <div>
+            <Image
+            src='/44.png'
+            width={100}
+            height={100}
+            alt=""
+            />
+            <h3 className="text-[2vw] font-medium">Finishing</h3>
+            <p className="text-justify">Tahap penyelesaian melibatkan pengolahan produk dengan berbagai teknik finishing untuk memperbaiki tampilan dan kualitas produk.</p>
+          </div>
+
+          <div>
+            <Image
+            src='/55.png'
+            width={100}
+            height={100}
+            alt=""
+            />
+            <h3 className="text-[2vw] font-medium">Guarantee</h3>
+            <p className="text-justify">Tahap jaminan melibatkan pemeriksaan kualitas produk dan pengujian produk untuk memastikan keamanan dan kualitasnya.</p>
+          </div>
+        </div>
+      </section>
+
+      <Artikel/>
+
+      <ContactHome/>
+
+    </>
   );
 }
