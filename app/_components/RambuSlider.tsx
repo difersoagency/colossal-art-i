@@ -42,19 +42,19 @@ export default function RambuSlider() {
 
     return (
         <div
-            className="flex flex-1 overflow-x-scroll w-full h-[50vh] gap-[4vw] mt-[6vw] flex-shrink-0 no-scrollbar"
+            className="flex flex-1 overflow-x-scroll w-full lg:h-[50vh] gap-[4vw] mt-[6vw] flex-shrink-0 no-scrollbar"
             ref={containerRef}
             onMouseDown={handleMouseDown}
             onMouseLeave={handleMouseLeave}
             onMouseUp={handleMouseUp}
             onMouseMove={handleMouseMove}
         >
-            <div className="bg-sign1 bg-cover bg-center rounded-2xl w-[30vw] h-[40vh] flex-shrink-0"></div>
-            <div className="bg-sign2 rounded-2xl bg-cover w-[30vw] h-[40vh] flex-shrink-0"></div>
-            <div className="bg-sign3 rounded-2xl bg-cover bg-center w-[30vw] h-[40vh] flex-shrink-0"></div>
-            <div className="bg-sign1 bg-cover bg-center rounded-2xl w-[30vw] h-[40vh] flex-shrink-0"></div>
-            <div className="bg-sign2 rounded-2xl bg-cover w-[30vw] h-[40vh] flex-shrink-0"></div>
-            <div className="bg-sign3 rounded-2xl bg-cover bg-center w-[30vw] h-[40vh] flex-shrink-0"></div>
+            <div className="bg-sign1 bg-cover bg-center rounded-2xl w-[30vw] h-[10vh] lg:h-[40vh] flex-shrink-0"></div>
+            <div className="bg-sign2 rounded-2xl bg-cover w-[30vw] h-[10vh] lg:h-[40vh] flex-shrink-0"></div>
+            <div className="bg-sign3 rounded-2xl bg-cover bg-center w-[30vw] h-[10vh] lg:h-[40vh] flex-shrink-0"></div>
+            <div className="bg-sign1 bg-cover bg-center rounded-2xl w-[30vw] h-[10vh] lg:h-[40vh] flex-shrink-0"></div>
+            <div className="bg-sign2 rounded-2xl bg-cover w-[30vw] h-[10vh] lg:h-[40vh] flex-shrink-0"></div>
+            <div className="bg-sign3 rounded-2xl bg-cover bg-center w-[30vw] h-[10vh] lg:h-[40vh] flex-shrink-0"></div>
         </div>
     );
 }

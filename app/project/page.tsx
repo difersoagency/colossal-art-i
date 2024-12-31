@@ -57,14 +57,14 @@ const ProjectPage: React.FC = () => {
 
   return (
     <>
-    <div className="bg-yellow pt-[10vw] pb-[4vw] ">
-      <h1 className="text-[2vw] font-bold text-center mb-8">Our Projects</h1>
+    <div className="bg-yellow pt-[16vh] lg:pt-[10vw] pb-[4vw] ">
+      <h1 className="text-[6vw] lg:text-[2vw] font-bold text-center mb-8">Our Projects</h1>
     </div>
-    <div className="min-h-screen bg-gray-100 pb-[10vw] pt-[4vw] px-[6vw]">
+    <div className="lg:min-h-screen bg-gray-100 pb-[20vh] lg:pb-[10vw] pt-[4vw] px-[6vw]">
 
 
         {/* Tab Filter */}
-        <div className="flex justify-center space-x-6 mb-8">
+        <div className="flex flex-col lg:flex-row justify-center space-x-6 mb-8">
           {categories.map((category) => (
             <button
               key={category}

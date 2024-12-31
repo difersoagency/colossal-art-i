@@ -40,12 +40,12 @@ const Services: React.FC = () => {
 
   return (
     <>
-      <div className="grid grid-cols-2 items-center">
-        <div className="bg-yellow h-full px-[6vw] flex">
+      <div className="lg:grid flex  flex-col-reverse lg:grid-cols-2 items-center">
+        <div className="bg-yellow h-full py-[20vw] lg:py-0 px-[6vw] flex ">
             <div className="m-auto">
-            <h1 className=' my-auto text-white font-bold text-[4vw] leading-[5vw] mb-[1.4vw]'><span className='text-blue'>Comprehensive Services</span>  to Bring Your Vision to Life</h1>
-                    <p className='text-blue mb-[2vw] text-[1vw] leading-[1.7vw] font-light tracking-wider'>At Colossal Art Indonesia, we specialize in delivering exceptional services that cater to the diverse needs of our clients. From innovative interior and architectural designs to captivating exhibition setups, our team of experts is dedicated to turning your ideas into reality. Whether you&apos;re looking to transform your space, create intricate models, or execute large-scale advertising projects, we provide tailored solutions with precision and creativity. </p>
-                    <a href="" className='font-raleway font-bold px-[1.4vw] text-[0.8vw] py-[1.2vh] bg-blue rounded-lg text-white '>Free Consultation</a>
+            <h1 className=' my-auto text-white font-bold text-[6vw] lg:text-[4vw] leading-[9vw] lg:leading-[5vw] mb-[3vw] lg:mb-[1.4vw]'><span className='text-blue'>Comprehensive Services</span>  to Bring Your Vision to Life</h1>
+                    <p className='text-blue mb-[6vw] lg:mb-[2vw] text-[3.5vw] lg:text-[1vw] leading-[6vw] lg:leading-[1.7vw] font-light tracking-wider'>At Colossal Art Indonesia, we specialize in delivering exceptional services that cater to the diverse needs of our clients. From innovative interior and architectural designs to captivating exhibition setups, our team of experts is dedicated to turning your ideas into reality. Whether you&apos;re looking to transform your space, create intricate models, or execute large-scale advertising projects, we provide tailored solutions with precision and creativity. </p>
+                    <a href="" className='font-raleway font-bold px-[4vw] lg:px-[1.4vw] text-[3vw] lg:text-[0.8vw] py-[1.2vh] bg-blue rounded-lg text-white '>Free Consultation</a>
             </div>
         </div>
         <div className="">
@@ -54,7 +54,7 @@ const Services: React.FC = () => {
                     width={1000}
                     height={1000}
                     alt='Konstruksi Bangunan Terbaik di Indonesia'
-                    className='w-full h-screen '
+                    className='w-full lg:h-screen h-[40vh] object-cover'
                     />
         </div>
       </div>
@@ -70,13 +70,13 @@ const Services: React.FC = () => {
             >
               {/* Accordion Header */}
               <button
-                className="w-full text-left py-[1vw] bg-blue-500 text-white font-medium flex justify-between items-center"
+                className="w-full text-left py-[5vw] lg:py-[1vw] bg-blue-500 text-white font-medium flex gap-[7vw] justify-between items-center"
                 onClick={() => toggleAccordion(index)}
               >
-                <h2 className="text-lg font-semibold text-blue">
+                <h2 className="text-md lg:text-lg font-semibold text-blue">
                   {service.title}
                 </h2>
-                <p className="text-sm font-light text-blue">
+                <p className="text-sm font-light text-blue ">
                   {service.shortDescription}
                 </p>
 
@@ -93,8 +93,8 @@ const Services: React.FC = () => {
                     : "max-h-0 opacity-0 scale-95"
                 }`}
               >
-                <div className="pb-[2vw] pt-[1vw] bg-gray-50">
-                  <p className="text-blue text-[0.8vw] leading-[1.4vw]">
+                <div className="pb-[10vw] lg:pb-[2vw] pt-[6vw] lg:pt-[1vw] bg-gray-50">
+                  <p className="text-blue text-[4vw] lg:text-[0.8vw] leading-[6vw] lg:leading-[1.4vw]">
                     {service.fullDescription}
                   </p>
                 </div>
@@ -103,38 +103,38 @@ const Services: React.FC = () => {
           ))}
           
         </div>
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4">
         <Image
                     src='/bnr-ovr.png'
                     width={1000}
                     height={1000}
                     alt='Konstruksi Bangunan Terbaik di Indonesia'
-                    className='w-full h-[20vw] object-fill '
+                    className='w-full h-full lg:h-[20vw] object-cover '
                     />
                     <Image
                     src='/mas.png'
                     width={1000}
                     height={1000}
                     alt='Konstruksi Bangunan Terbaik di Indonesia'
-                    className='w-full h-[20vw] object-fill  '
+                    className='w-full h-full lg:h-[20vw] object-cover  '
                     />
                     <Image
                     src='/bnr-ovr.png'
                     width={1000}
                     height={1000}
                     alt='Konstruksi Bangunan Terbaik di Indonesia'
-                    className='w-full h-[20vw] object-fill  '
+                    className='w-full h-full lg:h-[20vw] object-cover  '
                     />
                     <Image
                     src='/mas.png'
                     width={1000}
                     height={1000}
                     alt='Konstruksi Bangunan Terbaik di Indonesia'
-                    className='w-full h-[20vw] object-fill  '
+                    className='w-full h-full lg:h-[20vw] object-cover  '
                     />
         </div>
       </div>
-      <div className="mb-[7vw]">
+      <div className="mb-[16vh] lg:mb-[7vw]">
       <BrandSlider />
       </div>
     </>

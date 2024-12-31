@@ -37,7 +37,7 @@ const BrandSlider: React.FC = () => {
 
   return (
     <section className="relative bg-gray px-[6vw] py-[5vw] overflow-hidden">
-      <h2 className="text-blue font-bold text-[2vw] mb-[4vw]">
+      <h2 className="text-blue font-bold text-[5vw] lg:text-[2vw] mb-[7vw] lg:mb-[4vw]">
         Trusted by many Brands
       </h2>
 
