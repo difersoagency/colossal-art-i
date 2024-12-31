@@ -11,6 +11,10 @@ const config: Config = {
       backgroundImage: {
         'satu': "url('/mas.png')",
         'footer': "url('/ftr.png')",
+        'rambu' : "url('/rambu.jpg')",
+        'sign1' : "url('/sign1.jpg')",
+        'sign2' : "url('/sign2.jpg')",
+        'sign3' : "url('/sign3.jpg')",
       },
       colors: {
         background: "var(--background)",

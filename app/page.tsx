@@ -12,28 +12,28 @@ export default function HomePage() {
 
       <Banner />
       <section className="px-[6vw] py-[5vw]">
-        <div className="grid grid-cols-3 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 items-center">
           <div>
             <Image
               src="/bb.png"
               width={500}
               height={200}
               alt=""
-              className="w-full h-[80vh] rounded-xl object-cover"
+              className="w-full h-[30vh] lg:h-[80vh] rounded-xl object-cover"
             />
           </div>
-          <div className="col-span-2 px-[10vw]">
-            <h2 className="text-blue font-bold text-[2.4vw] mb-[0.7vw]">
+          <div className="lg:col-span-2 mt-[6vw] lg:mt-0 lg:px-[10vw]">
+            <h2 className="text-blue font-bold text-[5vw] lg:text-[2.4vw] mb-[0.7vw]">
               Our Expertise
             </h2>
-            <p className="text-blue font-thin leading-[1.7vw] text-[1vw]">
+            <p className="text-blue font-thin leading-[5vw] lg:leading-[1.7vw] text-[3vw] lg:text-[1vw]">
               It signifies our commitment to delivering not just buildings but
               also excellence, innovation, and lasting impact. We view each
               project as an opportunity to build trust, foster relationships,
               and contribute to the growth of communities.
             </p>
             <div className="grid grid-cols-3 items-stretch justify-between mt-[2vw] gap-y-[1vw] gap-x-[2vw]">
-              <div className="relative px-[1vw] py-[1.4vw] bg-satu opacity-80 rounded-3xl">
+              <div className="relative px-[4vw] lg:px-[1vw] py-[1.4vw] bg-satu opacity-80 rounded-3xl">
                 <div className="absolute inset-0 bg-blue/80 rounded-3xl"></div>{" "}
                 {/* Overlay */}
                 <Image
@@ -41,9 +41,9 @@ export default function HomePage() {
                   width={60}
                   height={60}
                   alt="Mall Decoration Service"
-                  className="object-contain relative z-10"
+                  className="object-contain relative z-10 w-[10vw] lg:w-[5vw]"
                 />
-                <p className="text-[0.8vw] text-white mt-[1vw] relative z-10">
+                <p className="text-[2.5vw] lg:text-[0.8vw] text-white mt-[1vw] relative z-10">
                   Mall Decoration
                 </p>
               </div>

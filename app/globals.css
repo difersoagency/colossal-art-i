@@ -2,3 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Latar belakang preloader */
+    color: white; /* Warna teks */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Default tersembunyi */
+    z-index: 1000; /* Pastikan di atas elemen lain */
+    font-family: var(--font-geist-sans);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease-in-out; /* Tambahkan transisi CSS untuk fallback */
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
