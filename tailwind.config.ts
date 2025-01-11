@@ -12,6 +12,8 @@ const config: Config = {
         'satu': "url('/mas.png')",
         'footer': "url('/ftr.png')",
         'rambu' : "url('/rambu.jpg')",
+        'kursi' : "url('/bg-kursi.jpg')",
+        'pattern' : "url('/pattern-18.png')",
         'sign1' : "url('/sign1.jpg')",
         'sign2' : "url('/sign2.jpg')",
         'sign3' : "url('/sign3.jpg')",

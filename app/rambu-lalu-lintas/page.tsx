@@ -14,14 +14,6 @@ export default function RambuHalaman() {
                 >
                 Free Consultation
                 </a>
-
-                {/* Rambu Lalu Lintas
-                Rambu Dilarang
-                Rambu Peringatan
-                Rambu Perintah
-                Rambu Petunjuk
-                Rambu Nomor Rute
-                Rambu Pendahulu Petunjuk Jurusan */}
             </div>
         </div>
 
@@ -81,7 +73,6 @@ export default function RambuHalaman() {
 
                 
                 </div>
-                
             </div>
         </div>
     </section>

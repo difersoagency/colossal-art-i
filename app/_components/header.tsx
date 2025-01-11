@@ -1,14 +1,35 @@
-"use client"
+"use client";
 
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="w-screen px-[6vw] py-[3vh] absolute z-20 bg-white">
+    <header
+      className={`w-screen px-[6vw] py-[3vh] z-20 transition-all duration-300 ${
+        isScrolled ? 'fixed bg-white/70 shadow-lg backdrop-blur-md' : 'absolute bg-white'
+      }`}
+    >
       <div className="grid grid-cols-2 justify-between items-center w-full">
         {/* Logo */}
         <div>
